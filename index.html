@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=1024"> 
+    <link rel="stylesheet" href="/assets/main.css">
+    <script src="/assets/main.js"></script>
+</head>
+
+<body>
+    <div id="home" class="main">
+        <div class="landing">
+            <div class="mainframe">
+                <div class="container">
+
+                    <div class="navsec">
+                        <div class="navbox">
+                            <a href="#home" class="navtext">HOME</a>
+                            <a href="#project" class="navtext">PROJECTS</a>
+                            <a href="#about" class="navtext">ABOUT</a>
+                        </div>
+                        <div class="navico">
+                            <svg width="96" height="30" viewBox="0 0 96 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="66" width="30" height="30" fill="url(#pattern0)" />
+                                <rect width="30" height="30" fill="url(#pattern1)" />
+                                <rect x="33" width="30" height="30" fill="url(#pattern2)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_17_1045" transform="scale(0.0104167)" />
+                                    </pattern>
+                                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image1_17_1045" transform="scale(0.0104167)" />
+                                    </pattern>
+                                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image2_17_1045" transform="scale(0.0104167)" />
+                                    </pattern>
+                                    <image id="image0_17_1045" width="96" height="96"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFMklEQVR4nO2d3Y9eQxzHP9ZFd/ch9fJYN+iLBGkTSZPGlQRrcWNDCcKFay8laRr8FZW00gghwqU7b2kIdddgN0qQ6tIqum1Rdp9qSy/scTHnSR+rPWfmzG/md3Z2Psk3e7M58z3fOZkzz7wdyGQymUwmk8lkMsuNC7QN1DAGbACuH9AY0AEuLf8CnALmyr+/ADPAt8B+4Avg16iuHWhbBXSAO4HbSq3H32MBfAPsBj4GPgBOe14zKYaAm4GXgBOYwELqNPAmMAlcGOH+WssIsBk4RPjQz6cfgCdLL8uGDvAscAy94BfrKPAMZ98pyTKJ7hNfp8PAo8HuXpG1wC70A7bVe8CaIEkocB+mi6gdqqtOAA8HyCMaw8B29IP01RvAqHA2wbkCmEI/PCl9CnRFEwrIKsyvUO3QpPU9cK1gTkFYD8yiH1YoHQbWiaUlzNXAT+iHFFqzwGqhzMTokmazcz59B1wpkpwAI6T1wrXVJ5ienjovox+GlnYK5OfFg+iHoK1HvFNsyFriDB+3XfMoDVu828BsqtrlmaUz9wsZT0n3eCXqQAfZ/v4cMEHcntRUWabkIOEhIo0ZPSdoeh64qbzuSsyYS+jwPwcuK8vcAPwueO2tjRJ1YBg4ImR2MPw+oSthMPw+kpVwlMDTm08JGT1X+H1CVcK5wu8jWQmPV+TnxRAy04lzwMaasi5B9p0wVV6zio3IvBMOllmJc7uAuQLz8rNBqhJswu8zIXSPt1qW58TrQuaqmoLF+DZHMcsa1KuWZVrTQfZXb4xgtMIvgB7CXdJNgub6cmkaXJujkNe21aRl+VbsCGAw1FOq+eQP6nlLD1Z8HcikdGBtCb/ArMoWYQxYCGi0QKbJaEOzM6gFhFZS3BXYqMTT26Ynf1C2Xe5Kno5ktmmQbQ2/wKy89mZnRMMF7k1Jm5qdxXrB0lslH0Y27VoJNmiEX2B243jzlYLxArempYrYzc6gvhTwr7qe37cSNMMvMANz3khOWMSsBO3wC+C3Br7/xxnlm2hSCW0IvwD+rjMaZNw6I0tugpSboPwSbi6Rl3DuhjZXbTfU5h1wzOYuhZkGxoE/BK7Vw4xnTQtcy5Xa7GwqYL+AERemgTswKyfqsB2KmC+vGbsSarOzqYAZASO27MU8rTbhrwTexxzCYdNUzWNGJz9r7M4dkYc3D0c3l8hwdJ6QaaZ/ENzaGrInlOqU5F5LH1aE2vGe8qT8NksPVtwbwGDqy1LutizfilHywiwX9QiwSvo1IXPLYWniK5ZlOjEuZG45LM69xbI8J4YwZ6z5mkt9efoBAg7zbxYwWJD2Bo3HKvLzJm9RqlbwLUpgTjyUCiS1TXpbGiXqSAf4UdB0KttUDxLx/NEQ+wWWukT3A9jwjpDxFPSWZ5aNWIP5xad989qaw5yTp8IDFgZTl/rZoi+iH4KWdgjk580w+utvNLQHWCGQnwhdYB/6ocTSDGamsFVchezvg7ZqFsWXbh3rMIebaocUSq0+uLXPKtJsjvYB1wjmFJQu5lxN7dCktAe4XDShCKwgnePrl/Q3ZjZh1nhqB+mqHvBQgDxUWM3SGjt6mxb3dHyYRGZaM5R+xgyvJM0o5nRBqZk1Cc1iJlOW3KdKfBgGnsBMZGgFfwBzyF5rhhQ06H/KcDtwnPCh9zA9mwlasEmxbR/zHMEEM475mOeN+HtcwCwu3l3qI+Avz2uK0bYKWEwXM3F+HXADZz9nezFmnc9F5f+dxEzw/8l/P2c7g1mlfDyq60wmk8lkMplMJpOp4F8DOMbRbjuvWwAAAABJRU5ErkJggg==" />
+                                    <image id="image1_17_1045" width="96" height="96"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEe0lEQVR4nO2dzY8URRiHHwd13FFE+VjJGlkkBjxoAvFqNKxiYnQiEdQT8eBF5YKBP4JohEC47BVvHFTgSMQLyhE1SmTDroasfATkW5HL6KFmgyyZqaquqn5rpt4n+WUu1T1v/96p6erq7rdAURRFURRFUZTSuE86AAujwDpgzf80CjwMPN79BPgLuNL9vABMAb8Cp4ATwMVao/YgtwS0gA3ABLAeeI7wGP8FfgaOdnUEuBW4z6GiAbwITALXMIal1N/AAaANLKjh+LLlIeBjYIb0pvfSNPBRN5ZiaAE7gLPIGT9fZ4Ht3diGmjbwG/KG99Is8E6yoxdkJXAYeYNddRAYT+KEABuBy8ib6qtrwHsJ/KiNJrAHeSNDNdk9loFiCXAcefNi6TtgcVSHEjIG/IS8abF1ElgR0ackPAucQd6sVDrTPcYseRL4HXmTUmuWDEdISzBdVNqcujSFmRTMgibDdcJ11fdkMjrah7wZUtobwb8gNiNvgrQ2BbtYkZXAVYcAh11XEDopH6oQ7LDqYKCX3myMFPgwqR3kqActyhjv+2oGGPE1s+G7AbCVDC9EMuBp4EPfjXxveDcxmR7z/aJCOA+swuOmv28P+AA1vx/Lgfd9NvDpAQ3gNKarKb2ZAZ7BnBes+PSAl1HzXVgFvOTa2CcBW/xjKRZnr1z/gkaAc8CiSuGUx3XM+cB6MnbtAa+h5vvwKPCKS0PXBExUj6VY1rs0ck2A086Uu3D60bqcA0YxFxi5PUmdOx3gCeBSv0YuPWAdan4VGsBal0Y21oTHUixW7zQBaYmSgNURAikVawLud9jJ8giB9EP6/OI0Z1MRq3cuPWBhhEBKxeqdJiAtURLwSIRASiVKApSEuCTgZvIohpcbtgYuCbDuROmJJkCYKAk4HyGQfkg/z5MSq3cuCZiKEEipnLI1cEmAdSdKTzQBwli9c5mHWYapwSM9ZzNodDA3s/7s18ilB1zE1NtR/PgRi/ngfiV8NCyWInHyTBOQjm9dGumDWWmI/mDWLeDLkIgK4wCOj6j7zIZ+US2WIkniVQNTY0166iB3ncZjyO7TAzrA5x7tS+UzPOaY9BWluJzDvB/wj+sGvnfEbgO7PLcpiU/xML8qLfKufCilaSq8plqV12s4oEHTm0GOVkBLFdzRV4FeVmIcU6hC+uCldRnBWnJtzPBU2gQpdYC3g10MZC/yRkhpdwT/gmli6mpKm1G3jgEPRvAvCoswNyCkTalLv5BhIdeSylZmW8C1hMKt2b8xNMZw/h2dBJ6K6FNSFmPqakqbFkvHyPA/38YDwE4G/zphkoxGO1V4i8FdwOHdBH6IMM5gzR19TcYjnRDayC5bZdM08Eayo8+EFvAJ8Afyhs9pFthGjfP5OdDELKImeaN/GlNqMosq6JK8gFnw5xLpTb8K7AdeJYMHjsUDmMcIptLURFfPE/4mZwezps3cYp7fUMN9W1dyS8B8lmLK5azGTHPMLWe7EHiMO+8w38T8sm9w73K2P2Cp2aMoiqIoiqIoilIn/wFAp63l3VkwnQAAAABJRU5ErkJggg==" />
+                                    <image id="image2_17_1045" width="96" height="96"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEZklEQVR4nO2dz29VRRTHP7wIjxYNoCC0yI8YbF0YA7jFxBY1RClIAktC4sIgC03knyBqFOOKLTsT0Ya1QEgDW2zARKhPax4aSQO0aQ2ysGUxz2CLzztzZ+aeufeeT/LN28ydd+733N8z91xQFEVRFEVRFKVuLJMOIIP1wE5gEHgRGAA2AKuAtZ1fgD+Be53f28BN4EfgBnAVmCo0agdSS0Av8AYwBAwDL+Ef4wJwDbgInAe+A+579lkpGsBu4DQwgzEspmaAM8DrpLcBFspK4H2gRXzTu6kFHAOakdc1KXqBE8DvyBm/VL8BHwE9Edc7CUaAX5A3vJvawKFoay/IVuAc8gbbahTYEsUJAQ4Ad5E31VUzwOEIfhRGE/gCmEfeTB+dBlYE9iY6TwNXkDcvlMYwN36loA8YR9600PoB2BzQpygMAr8ib1YsTWIehyTJJkyA0ibFVpsEr5DWUM3DTjddx5znkqAJXEbelKI1RiJXR18ib4aUPg/gnxcjlP8630fzwEFvF3OyFTMIIm2CtO4idHlapmc7sfWNp5fOHAgUeJW0z8tRB3pJ+5GylFrkGE9ouC4AHAe25Viu6jwPvOe6kOuYaBP4Geh3/aOacAvYDjywXcB1D3gXNf//eA44GqvzBnEG0KUJvT4TRJptMRQh2ComYAF41fbPXQ5BRxza1p3gXvUA0+geYKtpLC9JbfeAN4HVlm0V49WwTUPbBFh1pixiyKaRbQKsOlMWEWyjXU/cR87SxFqvv4F1WX9uswfsouaziHPSAHbYNMpi0D+W2pLpnSYgLkESkOw8mBIQJAEbAwRSVzK9s0nAUwECqSuZ3mkC4hIkAU8GCKSuBEmAEhGbBMxFj6K6zGY1sElAZidKVzQBwgRJwB8BAqkrmd7ZJOBmgEDqyo2sBjYJyOxE6YomQJgg3umATP4BmWey/txmD5jC1NtR3BgH7mQ1sr0TvugXSy05b9PINgEXPAKpK0E3Wp2Y5abgE7PuA2ct2yrwFRHq0r2G7gG22h0j0GXo9HQbOU1PdxkPWAA+dWjv0q+kQvOxS795XlFqYQpzKI8T/RWlB8BnjsvUiU9wMD8vPZgX9aQPHanpJ0wt1ELYW8AKlU1vezmag9FAgVdBX3t6mYstlLMcZWjdwbyeKsI+tFzNO94uenIKeSOkFOO+yJkVmPJd0mYUrUvA8gD+BWE18D3yphSlayRYyLWfepSxaZNwAdcBql07dBJ4IZhbkeijmoej6whebrqylmqdmC9hitOWiieAk5T7PmEeU4I/iQKtedmPuVuUNtNV01TocyabgW+RN9VWZynR8d6FPZgv3Ekb3E0t4K1oa58IPcCHmNEjacP/URv4gAKf56dAE1PmcQI54yc6MZT6JBuCVzBXG1PEN32ahD5lKB7AElZizhPDHb2M/5uc85iJshf+pb88+wxGaglYyjrM52wHMJ+zHQSexbx/u4ZH7zDPYbbsWf77c7aZs5QVRVEURVEURVGK4iF6XqzROnF3OwAAAABJRU5ErkJggg==" />
+                                </defs>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="top">
+                            <p class="txt1">rushikesh@yourhost:~$</p>
+                            <div class="contain">
+                                <div class="typed-out">
+                                    <p class="txt2">whoami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bot">
+                            <p class="txt">Hey, I’m Rushikesh
+                                <br>I'm a <a href="" class="typewrite" data-period="2000"
+                                    data-type='[ "Tech Enthusiast","Backend Developer","Frontend Developer","Ethical Hacker","Designer","API Developer"]'>
+                                    <span class="wrap"></span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="foot">
+                    <div class="quick">
+                        <div class="quickframe">
+
+                            <div class="mail">
+                                <a href="mailto:rsm99123@gmail.com">
+                                    <svg width="50" height="" viewBox="0 0 101 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="mailinner"
+                                            d="M79.6668 16.6667H21.3335C18.0183 16.6667 14.8389 17.9837 12.4947 20.3279C10.1505 22.6721 8.8335 25.8515 8.8335 29.1667V70.8334C8.8335 74.1486 10.1505 77.328 12.4947 79.6722C14.8389 82.0165 18.0183 83.3334 21.3335 83.3334H79.6668C82.982 83.3334 86.1615 82.0165 88.5057 79.6722C90.8499 77.328 92.1668 74.1486 92.1668 70.8334V29.1667C92.1668 25.8515 90.8499 22.6721 88.5057 20.3279C86.1615 17.9837 82.982 16.6667 79.6668 16.6667V16.6667ZM79.6668 25.0001L52.5835 43.6251C51.9501 43.9908 51.2316 44.1833 50.5002 44.1833C49.7688 44.1833 49.0502 43.9908 48.4168 43.6251L21.3335 25.0001H79.6668Z"
+                                            fill="#231F20" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                            <div class="git">
+                                <a href="https://github.com/RushX">
+                                    <svg width="50" height="100" viewBox="0 0 101 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="gitinner"
+                                            d="M50.5 4.16641C38.4728 4.04419 26.8891 8.70227 18.2947 17.1169C9.70038 25.5316 4.7986 37.0143 4.66669 49.0414C4.71303 58.5463 7.77062 67.7919 13.4003 75.4504C19.0299 83.1088 26.942 88.786 36 91.6664C38.2917 92.0831 39.125 90.7081 39.125 89.4997C39.125 88.2914 39.125 85.6247 39.125 81.8747C26.375 84.5831 23.6667 75.8747 23.6667 75.8747C22.8179 73.141 21.0135 70.8041 18.5834 69.2914C14.4167 66.5414 18.9167 66.5831 18.9167 66.5831C20.3569 66.7756 21.7348 67.2917 22.9471 68.0927C24.1595 68.8937 25.1747 69.9588 25.9167 71.2081C27.2097 73.4502 29.3314 75.0951 31.8251 75.7887C34.3187 76.4822 36.985 76.169 39.25 74.9164C39.483 72.6347 40.5162 70.5091 42.1667 68.9164C32 67.7914 21.3334 63.9581 21.3334 46.7497C21.2424 42.2609 22.901 37.9127 25.9584 34.6247C24.566 30.7709 24.7304 26.526 26.4167 22.7914C26.4167 22.7914 30.2917 21.5831 38.9167 27.3747C46.4246 25.3741 54.3255 25.3741 61.8334 27.3747C70.5834 21.5831 74.3333 22.7914 74.3333 22.7914C76.0197 26.526 76.1841 30.7709 74.7917 34.6247C77.92 37.8524 79.6686 42.1715 79.6667 46.6664C79.6667 63.9164 68.9167 67.7081 58.8334 68.8331C59.9374 69.905 60.7903 71.2083 61.3306 72.6492C61.871 74.0901 62.0854 75.6328 61.9584 77.1664V89.4581C61.9584 89.4581 62.7917 92.0831 65.0834 91.6247C74.1157 88.7264 82.0011 83.0479 87.6133 75.4003C93.2256 67.7527 96.2775 58.5272 96.3334 49.0414C96.2014 37.0143 91.2997 25.5316 82.7053 17.1169C74.1109 8.70227 62.5273 4.04419 50.5 4.16641"
+                                            fill="#231F20" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="lin">
+                                <a href="http://linkedin.com/in/r9941">
+                                    <svg width="40" height="66" viewBox="0 0 76 66" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="lininner"
+                                            d="M51.125 20.1737C47.9315 20.1643 44.7671 20.6935 41.813 21.731C38.8589 22.7685 36.1731 24.2939 33.9091 26.2199C31.6451 28.1459 29.8475 30.4348 28.6191 32.9555C27.3906 35.4762 26.7555 38.1793 26.7501 40.9102V61.8604C26.7501 62.7108 27.1451 63.5265 27.8484 64.1278C28.5517 64.7292 29.5055 65.067 30.5 65.067H39.25C40.2446 65.067 41.1984 64.7292 41.9017 64.1278C42.6049 63.5265 43 62.7108 43 61.8604V40.9102C42.9992 39.9389 43.2378 38.9784 43.7002 38.0913C44.1625 37.2041 44.8384 36.4103 45.6836 35.7615C46.5288 35.1127 47.5245 34.6234 48.6056 34.3257C49.6868 34.028 50.8292 33.9285 51.9583 34.0336C53.9834 34.2517 55.8444 35.0978 57.1884 36.4112C58.5324 37.7247 59.266 39.4143 59.25 41.1596V61.8604C59.25 62.7108 59.6451 63.5265 60.3483 64.1278C61.0516 64.7292 62.0054 65.067 63 65.067H71.7499C72.7445 65.067 73.6983 64.7292 74.4016 64.1278C75.1048 63.5265 75.4999 62.7108 75.4999 61.8604V40.9102C75.4945 38.1793 74.8594 35.4762 73.6309 32.9555C72.4025 30.4348 70.6049 28.1459 68.3409 26.2199C66.0769 24.2939 63.3911 22.7685 60.437 21.731C57.4829 20.6935 54.3185 20.1643 51.125 20.1737Z"
+                                            fill="#231F20" />
+                                        <path class="lininner"
+                                            d="M15.5 23.3801H4.24999C2.17893 23.3801 0.5 24.8158 0.5 26.5868V61.8601C0.5 63.6311 2.17893 65.0668 4.24999 65.0668H15.5C17.571 65.0668 19.2499 63.6311 19.2499 61.8601V26.5868C19.2499 24.8158 17.571 23.3801 15.5 23.3801Z"
+                                            fill="#231F20" />
+                                        <path class="lininner"
+                                            d="M9.87497 16.9667C15.0526 16.9667 19.2499 13.3775 19.2499 8.95002C19.2499 4.52253 15.0526 0.93335 9.87497 0.93335C4.69732 0.93335 0.5 4.52253 0.5 8.95002C0.5 13.3775 4.69732 16.9667 9.87497 16.9667Z"
+                                            fill="#231F20" />
+                                    </svg>
+                                </a>
+
+
+                            </div>
+                            <div class="twitter">
+                                <a href="http://twitter.com/rushi_m_35">
+                                    <svg width="50" height="100" viewBox="0 0 101 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="twitterinner"
+                                            d="M34.1668 83.3336C40.328 83.5397 46.4681 82.5087 52.2241 80.3015C57.9801 78.0942 63.2352 74.7556 67.6789 70.4828C72.1226 66.21 75.6647 61.0898 78.0959 55.4247C80.527 49.7597 81.798 43.6648 81.8335 37.5002C84.657 34.0061 86.7537 29.9828 88.0001 25.6669C88.0932 25.3259 88.0857 24.9653 87.9785 24.6284C87.8714 24.2916 87.6691 23.993 87.3961 23.7684C87.1232 23.5439 86.7911 23.403 86.4399 23.3628C86.0888 23.3226 85.7335 23.3848 85.4168 23.5419C83.9396 24.2529 82.2766 24.4826 80.662 24.1986C79.0474 23.9145 77.5626 23.1311 76.4168 21.9586C74.9541 20.3568 73.1848 19.0649 71.2137 18.1595C69.2425 17.2541 67.1097 16.7535 64.9416 16.6874C62.7735 16.6214 60.6142 16.9912 58.5916 17.775C56.569 18.5587 54.7243 19.7405 53.1668 21.2502C51.0343 23.3155 49.4723 25.8973 48.6327 28.7447C47.7931 31.5921 47.7043 34.6084 48.3751 37.5002C34.4168 38.3336 24.8335 31.7086 17.1668 22.6252C16.9365 22.3644 16.6352 22.1763 16.2997 22.0838C15.9643 21.9914 15.6092 21.9987 15.2778 22.1047C14.9463 22.2108 14.653 22.411 14.4335 22.681C14.214 22.9511 14.0779 23.2791 14.0418 23.6252C12.5813 31.727 13.6349 40.0817 17.0611 47.5672C20.4873 55.0527 26.122 61.3105 33.2085 65.5002C28.457 70.9495 21.7844 74.353 14.5835 75.0002C14.1977 75.0642 13.8416 75.2472 13.5649 75.5236C13.2883 75.8 13.105 76.156 13.0407 76.5417C12.9765 76.9274 13.0344 77.3236 13.2064 77.6748C13.3784 78.026 13.656 78.3146 14.0001 78.5002C20.2648 81.6309 27.1636 83.2843 34.1668 83.3336"
+                                            fill="#231F20" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="projectsec" id="project">
+                <div id="project" class="titlehold" hidden="true">PROJECTS</div>
+                <div class="project">
+                    <div class="cardout">
+                        <div class="cardin">
+                            <div class="cardtop">
+                                <div class="img">
+                                    <img src="/assets/astro.png" width="120" height="120" alt="">
+                                </div>
+                                <div class="cardheader">
+                                    <div class="cardtitle">Astro365</div>
+                                    <a href="http://astro365.in" class="cardshort">https://www.astro365.in</a>
+                                </div>
+                            </div>
+                            <div class="cardinfo">Astro365 is web based project which provides various services like
+                                Standard
+                                Kundali, Match Making, Horoscope, Daily Predictions and many more at a minimal cost and
+                                with
+                                one
+                                click.</div>
+                        </div>
+                    </div>
+                    <div class="cardout">
+                        <div class="cardin">
+                            <div class="cardtop">
+                                <div class="img">
+                                    <img src="/assets/Sinh.png" width="120" height="100" alt="">
+                                </div>
+                                <div class="cardheader">
+                                    <div class="cardtitle">SIAP</div>
+                                    <a href="http://www.sitspune.org" class="cardshort">https://www.sitspune.org</a>
+                                </div>
+                            </div>
+                            <div class="cardinfo">SIAP is the QR-based automated attendance monitoring system. The
+                                application
+                                helps with maintaining and marking attendance records of college students. The software
+                                is
+                                embedded with an anti-proxy system making it reliable and efficient for the lecturers to
+                                maintain the records precisely.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="projectsec">
+                <div class="titlehold">ABOUT</div>
+                <div class="about">
+                    <div class="aboutinner">
+                        <img src="/assets/RushikeshMule.jpg" class="aboutimg">
+                        <div class="aboutright">
+                            <div class="abouttxt">
+                                Hello World, I'm Rushikesh Muley. A FullStack Developer based out of Pune, Maharashtra.
+                                It all
+                                started with "How to develope a website".
+                                From singing on stage to lines of code on web-page, I love combining the worlds of logic
+                                and
+                                creative design at the Frontend with the crust
+                                of security and integrity at the Backend. PHP, NodeJs, Kotlin, Java, Firebase,
+                                Cloudflare and
+                                many more are my buddies and I'm always looking forward to expand this friend circle
+                                Drop me a line or check me out at:
+                            </div>
+                            <div class="aboutcontact">
+
+                                <div class="mail">
+                                    <a href="mailto:rsm99123@gmail.com">
+                                        <svg width="50" height="" viewBox="0 0 101 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="mailinner"
+                                                d="M79.6668 16.6667H21.3335C18.0183 16.6667 14.8389 17.9837 12.4947 20.3279C10.1505 22.6721 8.8335 25.8515 8.8335 29.1667V70.8334C8.8335 74.1486 10.1505 77.328 12.4947 79.6722C14.8389 82.0165 18.0183 83.3334 21.3335 83.3334H79.6668C82.982 83.3334 86.1615 82.0165 88.5057 79.6722C90.8499 77.328 92.1668 74.1486 92.1668 70.8334V29.1667C92.1668 25.8515 90.8499 22.6721 88.5057 20.3279C86.1615 17.9837 82.982 16.6667 79.6668 16.6667V16.6667ZM79.6668 25.0001L52.5835 43.6251C51.9501 43.9908 51.2316 44.1833 50.5002 44.1833C49.7688 44.1833 49.0502 43.9908 48.4168 43.6251L21.3335 25.0001H79.6668Z"
+                                                fill="#231F20" />
+                                        </svg>
+
+                                    </a>
+                                </div>
+                                <div class="git">
+                                    <a href="https://github.com/RushX">
+                                        <svg width="50" height="100" viewBox="0 0 101 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="gitinner"
+                                                d="M50.5 4.16641C38.4728 4.04419 26.8891 8.70227 18.2947 17.1169C9.70038 25.5316 4.7986 37.0143 4.66669 49.0414C4.71303 58.5463 7.77062 67.7919 13.4003 75.4504C19.0299 83.1088 26.942 88.786 36 91.6664C38.2917 92.0831 39.125 90.7081 39.125 89.4997C39.125 88.2914 39.125 85.6247 39.125 81.8747C26.375 84.5831 23.6667 75.8747 23.6667 75.8747C22.8179 73.141 21.0135 70.8041 18.5834 69.2914C14.4167 66.5414 18.9167 66.5831 18.9167 66.5831C20.3569 66.7756 21.7348 67.2917 22.9471 68.0927C24.1595 68.8937 25.1747 69.9588 25.9167 71.2081C27.2097 73.4502 29.3314 75.0951 31.8251 75.7887C34.3187 76.4822 36.985 76.169 39.25 74.9164C39.483 72.6347 40.5162 70.5091 42.1667 68.9164C32 67.7914 21.3334 63.9581 21.3334 46.7497C21.2424 42.2609 22.901 37.9127 25.9584 34.6247C24.566 30.7709 24.7304 26.526 26.4167 22.7914C26.4167 22.7914 30.2917 21.5831 38.9167 27.3747C46.4246 25.3741 54.3255 25.3741 61.8334 27.3747C70.5834 21.5831 74.3333 22.7914 74.3333 22.7914C76.0197 26.526 76.1841 30.7709 74.7917 34.6247C77.92 37.8524 79.6686 42.1715 79.6667 46.6664C79.6667 63.9164 68.9167 67.7081 58.8334 68.8331C59.9374 69.905 60.7903 71.2083 61.3306 72.6492C61.871 74.0901 62.0854 75.6328 61.9584 77.1664V89.4581C61.9584 89.4581 62.7917 92.0831 65.0834 91.6247C74.1157 88.7264 82.0011 83.0479 87.6133 75.4003C93.2256 67.7527 96.2775 58.5272 96.3334 49.0414C96.2014 37.0143 91.2997 25.5316 82.7053 17.1169C74.1109 8.70227 62.5273 4.04419 50.5 4.16641"
+                                                fill="#231F20" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="lin">
+                                    <a href="http://linkedin.com/in/r9941">
+                                        <svg width="40" height="66" viewBox="0 0 76 66" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="lininner"
+                                                d="M51.125 20.1737C47.9315 20.1643 44.7671 20.6935 41.813 21.731C38.8589 22.7685 36.1731 24.2939 33.9091 26.2199C31.6451 28.1459 29.8475 30.4348 28.6191 32.9555C27.3906 35.4762 26.7555 38.1793 26.7501 40.9102V61.8604C26.7501 62.7108 27.1451 63.5265 27.8484 64.1278C28.5517 64.7292 29.5055 65.067 30.5 65.067H39.25C40.2446 65.067 41.1984 64.7292 41.9017 64.1278C42.6049 63.5265 43 62.7108 43 61.8604V40.9102C42.9992 39.9389 43.2378 38.9784 43.7002 38.0913C44.1625 37.2041 44.8384 36.4103 45.6836 35.7615C46.5288 35.1127 47.5245 34.6234 48.6056 34.3257C49.6868 34.028 50.8292 33.9285 51.9583 34.0336C53.9834 34.2517 55.8444 35.0978 57.1884 36.4112C58.5324 37.7247 59.266 39.4143 59.25 41.1596V61.8604C59.25 62.7108 59.6451 63.5265 60.3483 64.1278C61.0516 64.7292 62.0054 65.067 63 65.067H71.7499C72.7445 65.067 73.6983 64.7292 74.4016 64.1278C75.1048 63.5265 75.4999 62.7108 75.4999 61.8604V40.9102C75.4945 38.1793 74.8594 35.4762 73.6309 32.9555C72.4025 30.4348 70.6049 28.1459 68.3409 26.2199C66.0769 24.2939 63.3911 22.7685 60.437 21.731C57.4829 20.6935 54.3185 20.1643 51.125 20.1737Z"
+                                                fill="#231F20" />
+                                            <path class="lininner"
+                                                d="M15.5 23.3801H4.24999C2.17893 23.3801 0.5 24.8158 0.5 26.5868V61.8601C0.5 63.6311 2.17893 65.0668 4.24999 65.0668H15.5C17.571 65.0668 19.2499 63.6311 19.2499 61.8601V26.5868C19.2499 24.8158 17.571 23.3801 15.5 23.3801Z"
+                                                fill="#231F20" />
+                                            <path class="lininner"
+                                                d="M9.87497 16.9667C15.0526 16.9667 19.2499 13.3775 19.2499 8.95002C19.2499 4.52253 15.0526 0.93335 9.87497 0.93335C4.69732 0.93335 0.5 4.52253 0.5 8.95002C0.5 13.3775 4.69732 16.9667 9.87497 16.9667Z"
+                                                fill="#231F20" />
+                                        </svg>
+                                    </a>
+
+
+                                </div>
+                                <div class="twitter">
+                                    <a href="http://twitter.com/rushi_m_35">
+                                        <svg width="50" height="100" viewBox="0 0 101 100" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="twitterinner"
+                                                d="M34.1668 83.3336C40.328 83.5397 46.4681 82.5087 52.2241 80.3015C57.9801 78.0942 63.2352 74.7556 67.6789 70.4828C72.1226 66.21 75.6647 61.0898 78.0959 55.4247C80.527 49.7597 81.798 43.6648 81.8335 37.5002C84.657 34.0061 86.7537 29.9828 88.0001 25.6669C88.0932 25.3259 88.0857 24.9653 87.9785 24.6284C87.8714 24.2916 87.6691 23.993 87.3961 23.7684C87.1232 23.5439 86.7911 23.403 86.4399 23.3628C86.0888 23.3226 85.7335 23.3848 85.4168 23.5419C83.9396 24.2529 82.2766 24.4826 80.662 24.1986C79.0474 23.9145 77.5626 23.1311 76.4168 21.9586C74.9541 20.3568 73.1848 19.0649 71.2137 18.1595C69.2425 17.2541 67.1097 16.7535 64.9416 16.6874C62.7735 16.6214 60.6142 16.9912 58.5916 17.775C56.569 18.5587 54.7243 19.7405 53.1668 21.2502C51.0343 23.3155 49.4723 25.8973 48.6327 28.7447C47.7931 31.5921 47.7043 34.6084 48.3751 37.5002C34.4168 38.3336 24.8335 31.7086 17.1668 22.6252C16.9365 22.3644 16.6352 22.1763 16.2997 22.0838C15.9643 21.9914 15.6092 21.9987 15.2778 22.1047C14.9463 22.2108 14.653 22.411 14.4335 22.681C14.214 22.9511 14.0779 23.2791 14.0418 23.6252C12.5813 31.727 13.6349 40.0817 17.0611 47.5672C20.4873 55.0527 26.122 61.3105 33.2085 65.5002C28.457 70.9495 21.7844 74.353 14.5835 75.0002C14.1977 75.0642 13.8416 75.2472 13.5649 75.5236C13.2883 75.8 13.105 76.156 13.0407 76.5417C12.9765 76.9274 13.0344 77.3236 13.2064 77.6748C13.3784 78.026 13.656 78.3146 14.0001 78.5002C20.2648 81.6309 27.1636 83.2843 34.1668 83.3336"
+                                                fill="#231F20" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+   
+</body>
+
+</html>
